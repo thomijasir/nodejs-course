@@ -1,0 +1,30 @@
+{
+	"name": "nodesample",
+	"version": "1.0.0",
+	"description": "Test Application",
+	"main": "index.js",
+	"dependencies": {
+		"ejs": "^2.5.7",
+		"express": "^4.16.2",
+		"nodemon": "^1.17.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "node app.js",
+		"dev": "./node_modules/nodemon/bin/nodemon.js app.js",
+		"fix":
+			"echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thomijasir/nodejs-course.git"
+	},
+	"keywords": ["yows"],
+	"author": "Thomi Jasir",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/thomijasir/nodejs-course/issues"
+	},
+	"homepage": "https://github.com/thomijasir/nodejs-course#readme"
+}
