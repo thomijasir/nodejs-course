@@ -17,6 +17,7 @@ app.get('/slug/:id', (req, res) => {
 	res.send('You request to see profile ' + req.params.id)
 })
 
+// Express tutorial Slug dynamic + past data to the view
 app.get('/profile/:id', (req, res) => {
 	const people = {
 		person: req.params.id,
@@ -25,4 +26,15 @@ app.get('/profile/:id', (req, res) => {
 	}
 	res.render('profile', { data: people })
 })
+
+// Express Routing Advance Query String
+app.get('/query', (req, res) => {
+	// sample localhost:3000/query?name=thomi&nim=6706151124
+	res.send(req.query)
+})
+
+app.get('/postmethod', (req, res) => {
+	res.render('postmethod')
+})
+
 app.listen(3000)

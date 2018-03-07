@@ -15,14 +15,13 @@
 </head>
 
 <body>
-<% include component/nav.ejs %>
-	<h1>Welcome to profile of user id
-		<%= data.person %>
-	</h1>
-	<p>Your name is:
-		<%= data.name %> and your email is:
-			<%= data.email %>
-	</p>
+	<form>
+		First name:<br>
+		<input type="text" name="firstname"><br>
+		Last name:<br>
+		<input type="text" name="lastname"><br>
+		<input type="submit" value="save">
+	</form>
 </body>
 
 </html>
